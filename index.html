@@ -7088,7 +7088,7 @@ a:focus-visible,
 
 
 
-/* Rounded hover for text action buttons like "Получить консультацию" / "Подробнее" */
+/* Rounded hover for text action buttons */
 .product-card a,
 .product-card .product-link,
 .product-card .details-link,
@@ -7333,7 +7333,7 @@ a.mega-catalog__sale:focus-visible{
   filter:none!important;
 }
 
-/* Перейти к товарам */
+/* Hero primary CTA */
 .hero--storefront .hero__buttons .btn:not(.btn--secondary),
 .hero--storefront .hero__buttons .btn:not(.btn--secondary):link,
 .hero--storefront .hero__buttons .btn:not(.btn--secondary):visited{
@@ -7357,7 +7357,7 @@ a.mega-catalog__sale:focus-visible{
   transform:translateY(0) scale(.985)!important;
 }
 
-/* Помощь с выбором */
+/* Hero secondary CTA */
 .hero--storefront .hero__buttons .btn--secondary,
 .hero--storefront .hero__buttons .btn--secondary:link,
 .hero--storefront .hero__buttons .btn--secondary:visited{
@@ -12867,6 +12867,169 @@ button[type="button"][data-reset-filters] > *{
 }
 /* /Product modal ordered flow v6 */
 
+
+
+/* Product modal legacy restore: opens like the first shared version */
+.product-modal .modal-product--legacy-details{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.03fr) minmax(410px,.97fr)!important;
+  align-items:stretch!important;
+  background:#fffdf9!important;
+}
+.product-modal .modal-product--legacy-details .modal-gallery--photos-only{
+  grid-column:auto!important;
+  grid-row:auto!important;
+  align-self:stretch!important;
+  padding:34px 28px 32px!important;
+  background:linear-gradient(180deg,#fff4e8 0%,#fff9f1 100%)!important;
+  border-right:1px solid rgba(90,43,20,.06)!important;
+  border-bottom:0!important;
+}
+.product-modal .modal-product--legacy-details .modal-info{
+  grid-column:auto!important;
+  grid-row:auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  padding:46px 34px 32px!important;
+  background:#fffdf9!important;
+}
+.product-modal .modal-product--legacy-details .main-media{
+  width:100%!important;
+  min-height:360px!important;
+  aspect-ratio:1.14/.83!important;
+  margin-top:0!important;
+  border-radius:24px!important;
+  background:#fff!important;
+  border:1px solid rgba(90,43,20,.06)!important;
+  box-shadow:0 16px 42px rgba(66,38,18,.08)!important;
+}
+.product-modal .modal-product--legacy-details .main-media img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  border-radius:24px!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.product-modal .modal-product--legacy-details .main-caption{
+  display:block!important;
+  margin:14px 0 12px!important;
+  color:#5e544d!important;
+  font-size:15px!important;
+  font-weight:900!important;
+}
+.product-modal .modal-product--legacy-details .thumb-row{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:10px!important;
+  margin-top:0!important;
+  overflow:visible!important;
+}
+.product-modal .modal-product--legacy-details .thumb-row button{
+  position:relative!important;
+  min-height:96px!important;
+  border-radius:18px!important;
+  padding:0!important;
+  background:#fff!important;
+  border:2px solid rgba(255,255,255,.9)!important;
+  box-shadow:0 8px 22px rgba(66,38,18,.08)!important;
+  overflow:hidden!important;
+  cursor:pointer!important;
+}
+.product-modal .modal-product--legacy-details .thumb-row button.is-active{
+  border-color:var(--brown-700)!important;
+}
+.product-modal .modal-product--legacy-details .thumb-row img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  border-radius:0!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.product-modal .modal-product--legacy-details .thumb-row span{
+  position:absolute!important;
+  left:9px!important;
+  right:9px!important;
+  bottom:9px!important;
+  padding:7px 8px!important;
+  border-radius:12px!important;
+  background:rgba(255,250,243,.94)!important;
+  color:var(--brown-900)!important;
+  font-size:12px!important;
+  font-weight:900!important;
+  line-height:1.15!important;
+}
+.product-modal .modal-product--legacy-details .modal-price{
+  display:flex!important;
+  justify-content:flex-start!important;
+  align-items:baseline!important;
+  gap:12px!important;
+  margin:18px 0!important;
+  padding:0 0 18px!important;
+  border-bottom:1px solid rgba(90,43,20,.08)!important;
+}
+.product-modal .modal-product--legacy-details .modal-price .price{
+  font-size:clamp(28px,2.5vw,36px)!important;
+}
+.product-modal .modal-product--legacy-details .modal-spec-panel{
+  margin:0 0 16px!important;
+}
+.product-modal .modal-product--legacy-details .modal-actions{
+  margin-top:0!important;
+}
+.product-modal .modal-product--legacy-details .modal-related{
+  margin-top:18px!important;
+  padding-top:16px!important;
+  border-top:1px solid rgba(90,43,20,.08)!important;
+}
+.product-modal .modal-product--legacy-details .modal-related__grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+}
+@media (max-width:920px){
+  .product-modal .modal-product--legacy-details{
+    grid-template-columns:1fr!important;
+  }
+  .product-modal .modal-product--legacy-details .modal-gallery--photos-only{
+    padding:16px 14px 18px!important;
+    border-right:0!important;
+    border-bottom:1px solid rgba(90,43,20,.06)!important;
+  }
+  .product-modal .modal-product--legacy-details .modal-info{
+    padding:22px 18px 24px!important;
+  }
+  .product-modal .modal-product--legacy-details .main-media{
+    min-height:300px!important;
+    margin-top:44px!important;
+  }
+  .product-modal .modal-product--legacy-details .thumb-row{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+  }
+  .product-modal .modal-product--legacy-details .thumb-row button{
+    min-height:82px!important;
+  }
+  .product-modal .modal-product--legacy-details .modal-related__grid{
+    grid-template-columns:1fr!important;
+  }
+}
+@media (max-width:560px){
+  .product-modal .modal-product--legacy-details .main-media{
+    min-height:240px!important;
+  }
+  .product-modal .modal-product--legacy-details .thumb-row{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .product-modal .modal-product--legacy-details .thumb-row button{
+    min-height:72px!important;
+  }
+  .product-modal .modal-product--legacy-details .thumb-row span{
+    font-size:10.5px!important;
+  }
+}
+/* /Product modal legacy restore */
 </style>
 </head>
 <body>
@@ -12902,7 +13065,7 @@ button[type="button"][data-reset-filters] > *{
       </form>
       <div class="header__actions">
         <div class="header-contact"><a class="phone" href="tel:+79990000000">+7 999 000-00-00</a><span>Доставка и самовывоз</span></div>
-        <a class="btn btn--ghost btn--small callback-btn" href="#callback">Написать</a>
+        <a class="btn btn--ghost btn--small callback-btn" href="#callback">Задать вопрос</a>
         <button class="favorites-trigger" type="button" aria-label="Открыть понравившееся" data-favorites-open><span class="favorites-trigger__icon" aria-hidden="true"><svg class="favorites-trigger__svg" viewBox="0 0 24 24" focusable="false"><path d="M12 20.1l-.35-.32C6.25 14.92 3 11.98 3 8.38 3 5.82 5.02 4 7.28 4c1.62 0 3.18.82 4.08 2.12h1.28C13.54 4.82 15.1 4 16.72 4 18.98 4 21 5.82 21 8.38c0 3.6-3.25 6.54-8.65 11.4l-.35.32z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="favorites-trigger__count" data-favorites-count>0</span></button><button class="cart" type="button" aria-label="Открыть корзину" data-cart-open><span class="cart__icon">🛒</span><span class="cart__count" data-cart-count>0</span></button>
         <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" data-burger><span></span><span></span><span></span></button>
       </div>
@@ -12944,7 +13107,14 @@ button[type="button"][data-reset-filters] > *{
       </div>
     </div>
     <nav class="nav mobile-nav" aria-label="Основная навигация" data-nav>
-      <a href="#catalog">Каталог</a><a href="#sales">Акции</a><a href="#delivery">Доставка</a><a href="#delivery">Оплата</a><a href="#steps">Как оплатить</a><a href="#about">О нас</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#sales">Акции</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#delivery">Оплата</a>
+      <a href="#steps">Как оплатить</a>
+      <a href="#about">О нас</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
     </nav>
 </header>
   <main id="top">
@@ -12966,7 +13136,7 @@ button[type="button"][data-reset-filters] > *{
             <p class="hero__lead" data-hero-text>Диваны, кровати, матрасы, столы и стулья для дома и офиса: выбирайте подходящую модель, добавляйте в корзину и переходите к онлайн-оплате.</p>
             <div class="store-hero-price"><span data-hero-old-price></span><strong data-hero-price>от 39 900 ₽</strong></div>
             <div class="store-hero-tags" data-hero-tags><span>Доставка и подъём</span><span>Подбор под интерьер</span><span>Выгодные предложения</span></div>
-            <div class="hero__buttons"><button class="btn" type="button" data-hero-catalog>Перейти к товарам</button><a class="btn btn--secondary" href="#callback">Помощь с выбором</a></div>
+            <div class="hero__buttons"><button class="btn" type="button" data-hero-catalog>Смотреть каталог</button><a class="btn btn--secondary" href="#callback">Получить помощь с выбором</a></div>
             <div class="hero-dots" data-hero-dots aria-label="Слайды товаров"></div>
           </div>
           <button class="hero-arrow hero-arrow--right" type="button" data-hero-next aria-label="Следующий товар"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6.5L15 12l-5.5 5.5"/></svg></button>
@@ -12993,7 +13163,7 @@ button[type="button"][data-reset-filters] > *{
         <path d="M4.75 10.25L12 4.5l7.25 5.75v8a1.5 1.5 0 0 1-1.5 1.5H6.25a1.5 1.5 0 0 1-1.5-1.5v-8Z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M9.5 19.75v-5.25h5v5.25" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-    </span><h3>Понятный ассортимент</h3><p>В каталог товарове — модели для гостиной, спальни, кухни и офиса, без лишнего визуального шума.</p></article><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
+    </span><h3>Понятный ассортимент</h3><p>В каталоге — модели для гостиной, спальни, кухни и офиса, без лишнего визуального шума.</p></article><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none">
         <path d="M12 4.5c-4.42 0-8 3.18-8 7.1 0 3.42 2.74 6.15 6.15 6.15H11a1.75 1.75 0 1 1 0 3.5h1c4.42 0 8-3.18 8-7.1 0-5.38-3.58-9.65-8-9.65Z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="8.3" cy="11.2" r="1" fill="currentColor"/>
@@ -13042,9 +13212,9 @@ button[type="button"][data-reset-filters] > *{
 <section class="faq section-padding" id="faq"><div class="container faq__grid"><div class="section-head reveal"><p class="eyebrow">Вопросы</p><h2>Что стоит уточнить перед заказом</h2><p>Собрали основные вопросы, которые обычно возникают при выборе мебели онлайн.</p></div><div class="accordion"><article class="faq-item reveal"><button type="button">Можно ли оформить заказ с доставкой?<span></span></button><p>Да, доставка доступна по городу и ближайшим районам. Стоимость зависит от адреса, подъёма и габаритов товара.</p></article><article class="faq-item reveal"><button type="button">Можно ли получить помощь с выбором?<span></span></button><p>Да, мы поможем подобрать размер, материал, цвет, механизм и подходящую категорию товара.</p></article><article class="faq-item reveal"><button type="button">Как понять, есть ли товар в наличии?<span></span></button><p>Наличие указано в карточке товара. Для товаров под заказ срок доставки и комплектация уточняются отдельно.</p></article><article class="faq-item reveal"><button type="button">Можно ли подобрать мебель по размерам комнаты?<span></span></button><p>Да, укажите размеры помещения или желаемые габариты — мы предложим модели, которые лучше подойдут по масштабу.</p></article><article class="faq-item reveal"><button type="button">Как проходит оплата заказа?<span></span></button><p>После оформления корзины открывается окно оплаты. Покупатель проверяет сумму и переходит на защищённую страницу платёжного сервиса.</p></article></div></div></section>
 </main>
   <footer class="footer"><div class="container footer__grid"><div><a class="brand brand--footer" href="#top"><img class="brand__icon-img" src="assets/images/brand/mebelslot-logo.png" alt="" width="656" height="324"><span class="brand__name">МебельСлот</span></a><p>Мебель для дома и офиса: понятный каталог, помощь с выбором, корзина и онлайн-оплата.</p></div><div><h3>Разделы</h3><a href="#catalog">Каталог</a><a href="#sales">Акции</a><a href="#delivery">Доставка и оплата</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></div><div><h3>Категории</h3><a href="#catalog" data-footer-category="Диваны">Диваны</a><a href="#catalog" data-footer-category="Кровати и матрасы">Кровати и матрасы</a><a href="#catalog" data-footer-category="Столы и стулья">Столы и стулья</a><a href="#sales">Акции</a></div><div><h3>Контакты</h3><a href="tel:+79990000000">+7 999 000-00-00</a><a href="mailto:info@mebelslot.ru">info@mebelslot.ru</a><a href="#">Политика конфиденциальности</a></div></div><div class="container footer__bottom"><span>© 2026 МебельСлот. Все права защищены.</span></div></footer>
-  <div class="cart-panel" data-cart-panel aria-hidden="true"><div class="cart-panel__overlay" data-cart-close></div><aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title"><div class="cart-drawer__head"><div><p class="eyebrow">Корзина</p><h2 id="cart-title">Ваш заказ в корзине</h2></div><button class="cart-drawer__close" type="button" data-cart-close aria-label="Закрыть корзину">×</button></div><div class="cart-empty" data-cart-empty><h3>Корзина пока пустая</h3><p>Вы пока ничего не добавили. Когда выберете товар, здесь появятся позиции, количество и итоговая сумма.</p><a class="btn" href="#catalog" data-cart-close>В каталог</a></div><div class="cart-filled" data-cart-filled hidden><div class="cart-items" data-cart-items></div><div class="cart-summary"><div class="cart-summary__row"><span>Товары</span><strong data-cart-subtotal>0 ₽</strong></div><div class="cart-summary__row cart-summary__row--muted"><span>Доставка</span><span>рассчитывается отдельно</span></div><div class="cart-summary__row cart-summary__row--total"><span>К оплате за товары</span><strong data-cart-total>0 ₽</strong></div></div><form class="cart-order cart-checkout" data-cart-order><h3>Оформление и оплата</h3><p>Заполните данные заказа. После проверки формы откроется окно онлайн-оплаты для товаров из корзины.</p><label>Имя<input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required></label><label>Телефон<input type="tel" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required></label><label>Email для связи<input type="email" name="email" placeholder="mail@example.ru" autocomplete="email"></label><label>Способ получения<select name="delivery" required data-delivery-method><option value="pickup">Самовывоз из магазина</option><option value="delivery">Доставка по Владивостоку</option><option value="delivery-lift">Доставка с подъёмом</option></select></label><label data-delivery-address hidden>Адрес доставки<textarea name="address" rows="2" placeholder="Улица, дом, квартира, подъезд" data-delivery-address-field></textarea></label><label>Комментарий к заказу<textarea name="comment" rows="3" placeholder="Цвет, этаж, удобное время доставки или другие пожелания"></textarea></label><label class="cart-consent"><input type="checkbox" name="agreement" required><span>Согласен на обработку персональных данных и условия онлайн-оплаты</span></label><button class="btn cart-order__submit" type="submit">Перейти к оплате</button><p class="form-status" data-cart-status role="status" aria-live="polite"></p></form></div></aside></div>
+  <div class="cart-panel" data-cart-panel aria-hidden="true"><div class="cart-panel__overlay" data-cart-close></div><aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title"><div class="cart-drawer__head"><div><p class="eyebrow">Корзина</p><h2 id="cart-title">Ваш заказ в корзине</h2></div><button class="cart-drawer__close" type="button" data-cart-close aria-label="Закрыть корзину">×</button></div><div class="cart-empty" data-cart-empty><h3>Корзина пока пустая</h3><p>Вы пока ничего не добавили. Когда выберете товар, здесь появятся позиции, количество и итоговая сумма.</p><a class="btn" href="#catalog" data-cart-close>В каталог</a></div><div class="cart-filled" data-cart-filled hidden><div class="cart-items" data-cart-items></div><div class="cart-summary"><div class="cart-summary__row"><span>Товары</span><strong data-cart-subtotal>0 ₽</strong></div><div class="cart-summary__row cart-summary__row--muted"><span>Доставка</span><span>рассчитывается отдельно</span></div><div class="cart-summary__row cart-summary__row--total"><span>К оплате за товары</span><strong data-cart-total>0 ₽</strong></div></div><form class="cart-order cart-checkout" data-cart-order><h3>Оформление и оплата</h3><p>Заполните данные заказа. После проверки формы откроется аккуратный платёжный шаг с номером заказа и итоговой суммой.</p><label>Имя<input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required></label><label>Телефон<input type="tel" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required></label><label>Email для связи<input type="email" name="email" placeholder="mail@example.ru" autocomplete="email"></label><label>Способ получения<select name="delivery" required data-delivery-method><option value="pickup">Самовывоз из магазина</option><option value="delivery">Доставка по Владивостоку</option><option value="delivery-lift">Доставка с подъёмом</option></select></label><label data-delivery-address hidden>Адрес доставки<textarea name="address" rows="2" placeholder="Улица, дом, квартира, подъезд" data-delivery-address-field></textarea></label><label>Комментарий к заказу<textarea name="comment" rows="3" placeholder="Цвет, этаж, удобное время доставки или другие пожелания"></textarea></label><label class="cart-consent"><input type="checkbox" name="agreement" required><span>Согласен на обработку персональных данных и условия онлайн-оплаты</span></label><button class="btn cart-order__submit" type="submit">Перейти к оплате</button><p class="form-status" data-cart-status role="status" aria-live="polite"></p></form></div></aside></div>
 
-  <div class="payment-modal" data-payment-modal aria-hidden="true"><div class="payment-modal__overlay" data-payment-close></div><div class="payment-modal__card" role="dialog" aria-modal="true" aria-labelledby="payment-title"><button class="payment-modal__close" type="button" data-payment-close aria-label="Закрыть окно оплаты">×</button><p class="eyebrow">Онлайн-оплата</p><h2 id="payment-title">Переход к оплате</h2><p>Проверьте заказ. После подключения платёжного сервиса эта кнопка будет переводить покупателя на защищённую страницу оплаты.</p><div class="payment-modal__summary"><div class="payment-modal__row"><span>Номер заказа</span><strong data-payment-order>MS-000000</strong></div><div class="payment-modal__row"><span>Позиций</span><strong data-payment-count>0</strong></div><div class="payment-modal__row payment-modal__row--total"><span>К оплате</span><strong data-payment-total>0 ₽</strong></div></div><p class="payment-modal__note" data-payment-note>Платёжный провайдер пока не подключён. Вставьте ссылку оплаты в настройку MEBELSLOT_PAYMENT_URL внутри index.html.</p><div class="payment-modal__actions"><button class="btn" type="button" data-payment-redirect>Открыть страницу оплаты</button><button class="btn btn--secondary" type="button" data-payment-close>Вернуться в корзину</button></div></div></div>
+  <div class="payment-modal" data-payment-modal aria-hidden="true"><div class="payment-modal__overlay" data-payment-close></div><div class="payment-modal__card" role="dialog" aria-modal="true" aria-labelledby="payment-title"><button class="payment-modal__close" type="button" data-payment-close aria-label="Закрыть окно оплаты">×</button><p class="eyebrow">Онлайн-оплата</p><h2 id="payment-title">Переход к оплате</h2><p>Проверьте номер заказа, количество позиций и итоговую сумму. В рабочей версии на этом шаге будет доступен переход на защищённую страницу оплаты.</p><div class="payment-modal__summary"><div class="payment-modal__row"><span>Номер заказа</span><strong data-payment-order>MS-000000</strong></div><div class="payment-modal__row"><span>Позиций</span><strong data-payment-count>0</strong></div><div class="payment-modal__row payment-modal__row--total"><span>К оплате</span><strong data-payment-total>0 ₽</strong></div></div><p class="payment-modal__note" data-payment-note>Оплата сейчас работает в демонстрационном режиме. В рабочей версии здесь будет переход на защищённую страницу платёжного сервиса.</p><div class="payment-modal__actions"><button class="btn" type="button" data-payment-redirect>Открыть страницу оплаты</button><button class="btn btn--secondary" type="button" data-payment-close>Вернуться в корзину</button></div></div></div>
 
   <div class="favorites-panel" data-favorites-panel aria-hidden="true"><div class="favorites-panel__overlay" data-favorites-close></div><aside class="favorites-drawer" role="dialog" aria-modal="true" aria-labelledby="favorites-title"><div class="favorites-drawer__head"><div><p class="eyebrow">Понравившееся</p><h2 id="favorites-title">Сохранённые товары</h2></div><button class="favorites-drawer__close" type="button" data-favorites-close aria-label="Закрыть понравившееся">×</button></div><div class="favorites-empty" data-favorites-empty><h3>Пока ничего не сохранено</h3><p>Нажмите на сердечко в карточке товара, чтобы вернуться к модели позже и сравнить варианты.</p><a class="btn" href="#catalog" data-favorites-close>В каталог</a></div><div class="favorites-filled" data-favorites-filled hidden><div class="favorites-items" data-favorites-items></div><button class="btn btn--secondary favorites-clear" type="button" data-favorites-clear>Очистить понравившееся</button></div></aside></div>
   <div class="site-toast" data-site-toast role="status" aria-live="polite"></div><dialog class="product-modal" data-product-modal><button class="modal-close" type="button" data-modal-close aria-label="Закрыть">×</button><div class="modal-body" data-modal-body></div></dialog>
@@ -13248,9 +13418,9 @@ const safeStorage={getItem(k){try{return localStorage.getItem(k)}catch(e){return
     function updateCart(){const items=cartItems();items.forEach(({product:p,qty})=>{cart[p.id]=qty});const count=items.reduce((s,i)=>s+i.qty,0),total=items.reduce((s,i)=>s+i.product.price*i.qty,0);$('[data-cart-count]').textContent=count;$('[data-cart-empty]').hidden=count>0;$('[data-cart-filled]').hidden=count===0;$('[data-cart-subtotal]').textContent=formatPrice(total);$('[data-cart-total]').textContent=formatPrice(total);$('[data-cart-items]').innerHTML=items.map(({product:p,qty})=>`<article class="cart-item"><div class="cart-item__image"><img src="${p.img}" alt="${p.name}"></div><div class="cart-item__main"><div class="cart-item__top"><h3>${p.name}</h3><button type="button" class="cart-item__remove" data-cart-remove="${p.id}" aria-label="Удалить ${p.name} из корзины">×</button></div><div class="cart-item__meta">${p.size} · ${p.material}</div><div class="cart-item__bottom"><div class="cart-qty" aria-label="Количество товара"><button type="button" data-cart-dec="${p.id}" aria-label="Уменьшить количество">−</button><input type="number" min="1" max="99" inputmode="numeric" value="${qty}" data-cart-qty="${p.id}" aria-label="Количество ${p.name}"><button type="button" data-cart-inc="${p.id}" aria-label="Увеличить количество">+</button></div><strong class="cart-item__price">${formatPrice(p.price*qty)}</strong></div></div></article>`).join('');saveCart()}
     function openCart(){const p=$('[data-cart-panel]');p.classList.add('is-open');p.setAttribute('aria-hidden','false');document.body.classList.add('is-locked')}function closeCart(){const p=$('[data-cart-panel]');p.classList.remove('is-open');p.setAttribute('aria-hidden','true');document.body.classList.remove('is-locked')}function showToast(title,text){const t=$('[data-site-toast]');if(!t)return;t.innerHTML=`<strong>${title}</strong><span>${text}</span>`;t.classList.add('is-visible');clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>t.classList.remove('is-visible'),4200)}
     function paymentUrlFor(order){if(!MEBELSLOT_PAYMENT_URL)return'';try{const u=new URL(MEBELSLOT_PAYMENT_URL,location.href);u.searchParams.set('order',order.id);u.searchParams.set('amount',String(order.total));u.searchParams.set('items',String(order.count));return u.toString()}catch(e){return MEBELSLOT_PAYMENT_URL}}
-    function openPaymentModal(order){const modal=$('[data-payment-modal]');if(!modal)return;modal.dataset.paymentUrl=paymentUrlFor(order);const orderEl=$('[data-payment-order]'),countEl=$('[data-payment-count]'),totalEl=$('[data-payment-total]'),note=$('[data-payment-note]'),btn=$('[data-payment-redirect]');if(orderEl)orderEl.textContent=order.id;if(countEl)countEl.textContent=String(order.count);if(totalEl)totalEl.textContent=formatPrice(order.total);if(note)note.textContent=modal.dataset.paymentUrl?'Нажмите кнопку ниже, чтобы перейти на защищённую страницу оплаты.':'Платёжный провайдер пока не подключён. Вставьте ссылку оплаты в настройку MEBELSLOT_PAYMENT_URL внутри index.html.';if(btn){btn.disabled=!modal.dataset.paymentUrl;btn.textContent=modal.dataset.paymentUrl?'Открыть страницу оплаты':'Платёжный сервис не подключён'}closeCart();modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');document.body.classList.add('is-locked')}
+    function openPaymentModal(order){const modal=$('[data-payment-modal]');if(!modal)return;modal.dataset.paymentUrl=paymentUrlFor(order);const orderEl=$('[data-payment-order]'),countEl=$('[data-payment-count]'),totalEl=$('[data-payment-total]'),note=$('[data-payment-note]'),btn=$('[data-payment-redirect]');if(orderEl)orderEl.textContent=order.id;if(countEl)countEl.textContent=String(order.count);if(totalEl)totalEl.textContent=formatPrice(order.total);if(note)note.textContent=modal.dataset.paymentUrl?'Нажмите кнопку ниже, чтобы перейти на защищённую страницу оплаты.':'Оплата сейчас работает в демонстрационном режиме. В рабочей версии здесь будет переход на защищённую страницу платёжного сервиса.';if(btn){btn.disabled=!modal.dataset.paymentUrl;btn.textContent=modal.dataset.paymentUrl?'Открыть страницу оплаты':'Оплата в демо-режиме'}closeCart();modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');document.body.classList.add('is-locked')}
     function closePaymentModal(){const modal=$('[data-payment-modal]');if(!modal)return;modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('is-locked')}
-    function redirectToPayment(){const modal=$('[data-payment-modal]');const url=modal&&modal.dataset.paymentUrl;if(url){location.href=url}else showToast('Платёжный сервис не подключён','Добавьте ссылку платёжного провайдера в MEBELSLOT_PAYMENT_URL.')}
+    function redirectToPayment(){const modal=$('[data-payment-modal]');const url=modal&&modal.dataset.paymentUrl;if(url){location.href=url}else showToast('Оплата в демо-режиме','В рабочей версии здесь откроется защищённая страница платёжного сервиса.')}
 
 
     function toggleDeliveryAddress(){
@@ -13284,25 +13454,39 @@ const safeStorage={getItem(k){try{return localStorage.getItem(k)}catch(e){return
       const p=products.find(x=>x.id===id);
       if(!p)return;
       const blankPixel='assets/images/placeholders/empty.gif';
-      const rawGallery=(p.images&&p.images.length>1?p.images.slice(1).map(item=>({src:item.src,label:item.label||item.alt||'Дополнительное фото'})):(p.gallery&&p.gallery.length?p.gallery:[]));
-      const realGallery=rawGallery
-        .filter(item=>item&&item.src&&item.src!==blankPixel&&item.src!==p.img)
-        .map(item=>({src:item.src,label:item.label||'Дополнительное фото'}));
-      const gallery=[{src:p.img,label:'Основное фото'},...realGallery].filter(item=>item&&item.src);
-      while(gallery.length<3){
+      const galleryLabels=['Основной вид','В интерьере','Деталь обивки','Швы и посадка'];
+      const rawGallery=[
+        ...(Array.isArray(p.images)?p.images:[]),
+        ...(Array.isArray(p.gallery)?p.gallery:[])
+      ];
+      const seen=new Set();
+      const gallery=[];
+      const addGalleryItem=(src,label)=>{
+        if(!src||src===blankPixel||seen.has(src))return;
+        seen.add(src);
+        gallery.push({src,label:label||galleryLabels[Math.min(gallery.length,galleryLabels.length-1)]||'Фото товара'});
+      };
+      addGalleryItem(p.img,'Основной вид');
+      rawGallery.forEach(item=>addGalleryItem(item&&item.src,item&&(item.label||item.alt)));
+      if(!gallery.length)addGalleryItem(p.img,'Основной вид');
+      while(gallery.length<4&&p.img){
         gallery.push({
           src:p.img,
-          label:gallery.length===1?'Дополнительный ракурс':'Детали товара',
+          label:galleryLabels[gallery.length]||'Фото товара',
           demo:true
         });
       }
-      const thumbPositions=['50% 50%','34% 50%','66% 50%','50% 35%','50% 65%'];
-      const compactThumbs=`<div class="modal-compact-thumbs" aria-label="Фотографии товара">${gallery.slice(0,5).map((item,idx)=>`<button class="${idx===0?'is-active':''}" type="button" data-thumb="${item.src}" data-thumb-label="${item.label}" aria-label="Показать фото ${idx+1}"><img src="${item.src}" alt="${item.label}" loading="lazy" style="object-position:${thumbPositions[idx]||'50% 50%'}"><span>${idx+1}</span></button>`).join('')}</div>`;
       const stock=productStockInfo(p);
-      const relatedSource=Array.isArray(p.relatedIds)&&p.relatedIds.length?p.relatedIds.map(id=>products.find(x=>x.id===id)).filter(Boolean):products.filter(x=>x.id!==p.id&&mainCategoryForProduct(x)===mainCategoryForProduct(p));
-      const related=relatedSource.filter(x=>x&&x.id!==p.id).slice(0,3);
-      $('[data-modal-body]').innerHTML=`<article class="modal-product modal-product--enhanced modal-product--no-3d modal-product--clean modal-product--ordered">
-        <section class="modal-info modal-info--intro">
+      const related=products.filter(x=>x.id!==p.id&&mainCategoryForProduct(x)===mainCategoryForProduct(p)).slice(0,3);
+      $('[data-modal-body]').innerHTML=`<article class="modal-product modal-product--enhanced modal-product--no-3d modal-product--clean modal-product--legacy-details">
+        <div class="modal-gallery modal-gallery--photos-only">
+          <div class="gallery-pane is-active" data-gallery-pane="photo">
+            <div class="main-media"><img src="${gallery[0].src}" alt="${p.name} — ${gallery[0].label}" data-main-image></div>
+            <div class="main-caption" data-main-caption>${gallery[0].label}</div>
+            <div class="thumb-row">${gallery.map((item,i)=>`<button type="button" class="${i===0?'is-active':''}" data-thumb="${item.src}" data-thumb-label="${item.label}"><img src="${item.src}" alt="${item.label}" loading="lazy"><span>${item.label}</span></button>`).join('')}</div>
+          </div>
+        </div>
+        <div class="modal-info">
           <div class="modal-title-row">
             <span class="${badgeClass(p.badgeType)}">${p.badge}</span>
             <span class="modal-article">Арт. ${productArticle(p)}</span>
@@ -13313,17 +13497,7 @@ const safeStorage={getItem(k){try{return localStorage.getItem(k)}catch(e){return
             <span class="product-stock__status ${stock.className}">${stock.label}</span>
             <span class="modal-buy-info__delivery">${stock.delivery}</span>
           </div>
-        </section>
-        <section class="modal-gallery modal-gallery--photos-only modal-gallery--ordered" aria-label="Фотографии товара">
-          <div class="gallery-pane is-active" data-gallery-pane="photo">
-            <div class="main-media"><img src="${gallery[0].src}" alt="${p.name}" data-main-image></div>
-            ${compactThumbs}
-          </div>
-        </section>
-        <section class="modal-purchase-panel" aria-label="Цена и покупка">
-          <div class="price-row modal-price modal-price--under-gallery">${p.oldPrice?`<span class="old-price">${formatPrice(p.oldPrice)}</span>`:''}<span class="price">${formatPrice(p.price)}</span></div>
-        </section>
-        <section class="modal-info modal-info--details">
+          <div class="price-row modal-price">${p.oldPrice?`<span class="old-price">${formatPrice(p.oldPrice)}</span>`:''}<span class="price">${formatPrice(p.price)}</span></div>
           <section class="modal-spec-panel" aria-label="Характеристики товара">
             <div class="modal-spec-panel__head">
               <h3>Характеристики</h3>
@@ -13338,9 +13512,9 @@ const safeStorage={getItem(k){try{return localStorage.getItem(k)}catch(e){return
               <div><dt>Артикул</dt><dd>${productArticle(p)}</dd></div>
             </dl>
           </section>
-          <div class="modal-actions modal-actions--with-help"><button class="btn modal-cart-button" type="button" data-buy="${p.id}">В корзину</button><button class="modal-favorite-toggle modal-favorite-toggle--icon ${isFavorite(p.id)?'is-active':''}" type="button" data-favorite-toggle="${p.id}" aria-pressed="${isFavorite(p.id)?'true':'false'}" aria-label="${isFavorite(p.id)?'Убрать из понравившегося':'Добавить в понравившееся'}"><span data-favorite-icon>${favoriteIcon(isFavorite(p.id))}</span></button><div class="modal-help-line"><span>Нужна помощь с выбором?</span><a href="#callback" data-modal-request>Получить консультацию →</a></div></div>
-        </section>
-        ${related.length?`<section class="modal-related modal-related--ordered"><h3>Похожие товары</h3><div class="modal-related__grid">${related.map(r=>`<button class="modal-related-card" type="button" data-open-product="${r.id}"><img src="${r.img}" alt="${r.name}" loading="lazy"><span><strong>${r.name}</strong><span>${formatPrice(r.price)}</span></span></button>`).join('')}</div></section>`:''}
+          <div class="modal-actions modal-actions--with-help"><button class="btn modal-cart-button" type="button" data-buy="${p.id}">В корзину</button><button class="modal-favorite-toggle modal-favorite-toggle--icon ${isFavorite(p.id)?'is-active':''}" type="button" data-favorite-toggle="${p.id}" aria-pressed="${isFavorite(p.id)?'true':'false'}" aria-label="${isFavorite(p.id)?'Убрать из понравившегося':'Добавить в понравившееся'}"><span data-favorite-icon>${favoriteIcon(isFavorite(p.id))}</span></button><div class="modal-help-line"><span>Нужна помощь с выбором?</span><a href="#callback" data-modal-request>Написать менеджеру →</a></div></div>
+          ${related.length?`<div class="modal-related"><h3>Похожие товары</h3><div class="modal-related__grid">${related.map(r=>`<button class="modal-related-card" type="button" data-open-product="${r.id}"><img src="${r.img}" alt="${r.name}" loading="lazy"><span><strong>${r.name}</strong><span>${formatPrice(r.price)}</span></span></button>`).join('')}</div></div>`:''}
+        </div>
       </article>`;
       const pm=$('[data-product-modal]');
       if(pm){
