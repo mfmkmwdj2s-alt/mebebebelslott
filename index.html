@@ -1,0 +1,378 @@
+<!doctype html>
+<!-- МебельСлот v9-structure-clean: код разнесён по css/js/data, визуал и логика v8 сохранены. -->
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO_BASE_2026_07_07: перед публикацией замените домен и реквизиты в data/settings.js, data/legal.js и docs/*.md -->
+  <title>МебельСлот — сайт мебели для дома и офиса во Владивостоке</title>
+  <meta name="description" content="МебельСлот — сайт мебели для дома и офиса во Владивостоке: диваны, кровати, матрасы, столы и стулья. Каталог, корзина, онлайн-оплата и помощь с выбором.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#5A2B14">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://mebelslot.ru/">
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="МебельСлот">
+  <meta property="og:title" content="МебельСлот — сайт мебели для дома и офиса">
+  <meta property="og:description" content="Выбирайте мебель для дома и офиса, добавляйте товары в корзину и переходите к онлайн-оплате.">
+  <meta property="og:url" content="https://mebelslot.ru/">
+  <meta property="og:image" content="https://mebelslot.ru/assets/images/brand/mebelslot-logo.png">
+  <meta property="og:image:alt" content="Логотип МебельСлот">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="МебельСлот — сайт мебели для дома и офиса">
+  <meta name="twitter:description" content="Каталог мебели, корзина, онлайн-оплата и помощь с выбором.">
+  <meta name="twitter:image" content="https://mebelslot.ru/assets/images/brand/mebelslot-logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "МебельСлот",
+    "url": "https://mebelslot.ru/",
+    "logo": "https://mebelslot.ru/assets/images/brand/mebelslot-logo.png",
+    "image": "https://mebelslot.ru/assets/images/brand/mebelslot-logo.png",
+    "description": "МебельСлот — сайт мебели для дома и офиса во Владивостоке.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Владивосток",
+      "addressCountry": "RU",
+      "streetAddress": "[указать адрес]"
+    },
+    "telephone": "+7 999 000-00-00",
+    "email": "info@mebelslot.ru",
+    "areaServed": "Россия",
+    "priceRange": "₽₽",
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "МебельСлот",
+    "url": "https://mebelslot.ru/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://mebelslot.ru/#catalog?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header site-header--store" data-header>
+    <div class="store-topbar">
+      <div class="container store-topbar__inner">
+        <div class="store-topbar__meta">
+          <span class="store-location">Владивосток</span>
+          <span class="store-address">ул. Мебельная, 10</span>
+          <span class="store-hours">Пн–Сб 10:00–20:00</span>
+        </div><a class="store-top-phone" href="tel:+79990000000">+7 999 000-00-00</a>
+        <div class="store-topbar__links">
+          <a href="#sales">Акции</a>
+          <a href="#delivery">Доставка</a>
+          <a href="#steps">Как оплатить</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#about">О нас</a>
+        </div>
+      </div>
+    </div>
+    <div class="container header__inner storefront-header">
+      <a class="brand" href="#top" aria-label="МебельСлот — на главную"><img class="brand__icon-img" src="assets/images/brand/mebelslot-logo.png" alt="" width="656" height="324"><span class="brand__name">МебельСлот</span></a>
+      <button class="catalog-button catalog-button--sections" type="button" aria-label="Открыть каталог" aria-controls="sections-panel" aria-expanded="false" data-sections-toggle><span class="catalog-button__text">Каталог</span><span class="catalog-button__chevron" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 6.25L8 10.25L12.5 6.25" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <form class="search-box" action="#catalog" role="search" data-search-form>
+        <input type="search" placeholder="Поиск по каталогу" aria-label="Поиск по каталогу" data-search-input>
+        <button class="search-submit" type="submit" aria-label="Найти">
+          <svg class="search-submit__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="10.8" cy="10.8" r="5.8"></circle>
+            <path d="M15.4 15.4L20 20"></path>
+          </svg>
+        </button>
+        <div class="search-suggestions" data-search-suggestions hidden></div>
+      </form>
+      <div class="header__actions">
+        <div class="header-contact"><a class="phone" href="tel:+79990000000">+7 999 000-00-00</a><span>Доставка и самовывоз</span></div>
+        <a class="btn btn--ghost btn--small callback-btn" href="#callback">Задать вопрос</a>
+        <button class="favorites-trigger" type="button" aria-label="Открыть понравившееся" data-favorites-open><span class="favorites-trigger__icon" aria-hidden="true"><svg class="favorites-trigger__svg" viewBox="0 0 24 24" focusable="false"><path d="M12 20.1l-.35-.32C6.25 14.92 3 11.98 3 8.38 3 5.82 5.02 4 7.28 4c1.62 0 3.18.82 4.08 2.12h1.28C13.54 4.82 15.1 4 16.72 4 18.98 4 21 5.82 21 8.38c0 3.6-3.25 6.54-8.65 11.4l-.35.32z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="favorites-trigger__count" data-favorites-count>0</span></button><button class="cart" type="button" aria-label="Открыть корзину" data-cart-open><span class="cart__icon">🛒</span><span class="cart__count" data-cart-count>0</span></button>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" data-burger><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="sections-panel sections-panel--mega" id="sections-panel" data-sections-panel hidden>
+      <div class="mega-catalog__head">
+        <div>
+          <strong>Каталог мебели</strong>
+          <span>Быстрый переход к нужному разделу</span>
+        </div>
+      </div>
+      <div class="mega-catalog__grid" aria-label="Разделы каталога">
+        <section class="mega-catalog__group">
+          <h3>Диваны</h3>
+          <button class="mega-catalog__link" type="button" data-section-category="Диваны" data-section-subcategory="Диваны-кровати">Диваны-кровати</button>
+          <button class="mega-catalog__link" type="button" data-section-category="Диваны" data-section-subcategory="Кожаные диваны">Кожаные диваны</button>
+          <button class="mega-catalog__link" type="button" data-section-category="Диваны" data-section-subcategory="Диваны для офиса">Диваны для офиса</button>
+        </section>
+        <section class="mega-catalog__group">
+          <h3>Спальня</h3>
+          <button class="mega-catalog__link" type="button" data-section-category="Кровати и матрасы" data-section-subcategory="Кровати">Кровати</button>
+          <button class="mega-catalog__link" type="button" data-section-category="Кровати и матрасы" data-section-subcategory="Матрасы">Матрасы</button>
+          <button class="mega-catalog__link" type="button" data-section-category="Кровати и матрасы">Кровати и матрасы</button>
+        </section>
+        <section class="mega-catalog__group">
+          <h3>Столовая</h3>
+          <button class="mega-catalog__link" type="button" data-section-category="Столы и стулья" data-section-subcategory="Обеденные столы">Обеденные столы</button>
+          <button class="mega-catalog__link" type="button" data-section-category="Столы и стулья" data-section-subcategory="Стулья для столовой">Стулья для столовой</button>
+          <button class="mega-catalog__link" type="button" data-section-category="Столы и стулья">Столы и стулья</button>
+        </section>
+        <section class="mega-catalog__group mega-catalog__group--accent mega-catalog__group--quick">
+          <h3>Быстрый выбор</h3>
+          <button class="mega-catalog__link" type="button" data-section-category="Акции">Скидки</button>
+          <button class="mega-catalog__link" type="button" data-section-purpose="sleep">Для сна</button>
+          <button class="mega-catalog__link" type="button" data-section-purpose="dining">Для столовой</button>
+          <button class="mega-catalog__link" type="button" data-section-purpose="office">Для офиса</button>
+          <button class="mega-catalog__link" type="button" data-section-purpose="home">Для дома</button>
+        </section>
+      </div>
+    </div>
+    <nav class="nav mobile-nav" aria-label="Основная навигация" data-nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#sales">Акции</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#delivery">Оплата</a>
+      <a href="#steps">Как оплатить</a>
+      <a href="#about">О нас</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+  <main id="top">
+    <section class="hero hero--storefront" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="store-hero-banner reveal" data-hero-slider>
+          <button class="hero-arrow hero-arrow--left" type="button" data-hero-prev aria-label="Предыдущий товар"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 6.5L9 12l5.5 5.5"/></svg></button>
+          <button class="store-hero-product" type="button" data-hero-product aria-label="Перейти к товару в каталоге">
+            <span class="store-hero-badge" data-hero-badge>Хит недели</span>
+            <img data-hero-image src="assets/images/placeholders/empty.gif" alt="Диван-кровать Комфорт" width="900" height="560" loading="eager">
+          </button>
+          <div class="store-hero-copy">
+            <p class="eyebrow" data-hero-kicker>Мебель для жизни</p>
+            <h1 id="hero-title" data-hero-title>Мебель для дома и офиса в одном каталоге</h1>
+            <button class="store-hero-product store-hero-product--mobile-copy" type="button" data-hero-product-mobile aria-label="Перейти к товару в каталоге">
+            <span class="store-hero-badge" data-hero-badge-mobile>Хит недели</span>
+            <img data-hero-image-mobile src="assets/images/products/comfort-sofa-bed-main.jpg" alt="Диван-кровать Комфорт" width="900" height="560" loading="eager">
+          </button>
+            <p class="hero__lead" data-hero-text>Диваны, кровати, матрасы, столы и стулья для дома и офиса: выбирайте подходящую модель, добавляйте в корзину и переходите к онлайн-оплате.</p>
+            <div class="store-hero-price"><span data-hero-old-price></span><strong data-hero-price>от 39 900 ₽</strong></div>
+            <div class="store-hero-tags" data-hero-tags><span>Доставка и подъём</span><span>Подбор под интерьер</span><span>Выгодные предложения</span></div>
+            <div class="hero__buttons"><button class="btn" type="button" data-hero-catalog>Смотреть каталог</button><a class="btn btn--secondary" href="#callback">Получить помощь с выбором</a></div>
+            <div class="hero-dots" data-hero-dots aria-label="Слайды товаров"></div>
+          </div>
+          <button class="hero-arrow hero-arrow--right" type="button" data-hero-next aria-label="Следующий товар"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6.5L15 12l-5.5 5.5"/></svg></button>
+        </div>
+      </div>
+    </section>
+    <section class="sales section-padding" id="sales"><div class="container"><div class="section-head reveal"><p class="eyebrow">Акции</p><h2>Акции и специальные предложения</h2></div><div class="sales-grid"><article class="sale-card sale-card--large sale-card--with-photo reveal" data-sale-filter="discount-sofas" data-section-category="Диваны"><div class="sale-card__photo"><img src="assets/images/sections/sale-sofas-discount.jpg" alt="Диван по акции"></div><span>до 30%</span><h3>Скидки до 30% на диваны</h3><p>Популярные модели для гостиной, отдыха и ежедневного сна доступны по сниженной цене.</p><a href="#catalog" data-section-category="Диваны" data-sale-filter="discount-sofas">Смотреть товары</a></article><article class="sale-card reveal"><span>подбор</span><h3>Помощь с выбором</h3><p>Подскажем подходящий размер, материал и комплектацию перед оформлением заказа.</p><a href="#callback">Получить консультацию</a></article><article class="sale-card reveal"><span>выгода</span><h3>Диваны-кровати</h3><p>Практичные модели для гостиной и ежедневного сна.</p><a href="#catalog" data-section-category="Диваны" data-section-subcategory="Диваны-кровати">В каталог товаров</a></article><article class="sale-card reveal"><span>склад</span><h3>Распродажа со склада</h3><p>Товары со склада можно заказать быстрее и по выгодной цене.</p><a href="#catalog" data-sale-filter="true">Посмотреть</a></article><article class="sale-card reveal"><span>офис</span><h3>Офисная мебель</h3><p>Модели для приёмных, переговорных и зон ожидания.</p><a href="#catalog" data-section-category="Диваны" data-section-subcategory="Диваны для офиса">Подобрать</a></article></div></div></section>
+    <section class="catalog section-padding" id="catalog"><div class="container"><div class="section-head reveal"><p class="eyebrow">Каталог товаров</p><h2>Выберите модель и добавьте её в корзину</h2><p>Фильтры помогут быстро отобрать товары по категории, цене, материалу, размеру и назначению.</p></div><span data-product-count hidden>0</span>
+<div class="catalog-chips reveal" aria-label="Быстрый выбор раздела каталога">
+  <button type="button" data-section-category="all">Все товары</button>
+  <button type="button" data-section-category="Диваны">Диваны</button>
+  <button type="button" data-section-category="Диваны" data-section-subcategory="Диваны-кровати">Диваны-кровати</button>
+  <button type="button" data-section-category="Диваны" data-section-subcategory="Кожаные диваны">Кожаные диваны</button>
+  <button type="button" data-section-category="Диваны" data-section-subcategory="Диваны для офиса">Офисные диваны</button>
+  <button type="button" data-section-category="Кровати и матрасы" data-section-subcategory="Кровати">Кровати</button>
+  <button type="button" data-section-category="Кровати и матрасы" data-section-subcategory="Матрасы">Матрасы</button>
+  <button type="button" data-section-category="Столы и стулья" data-section-subcategory="Обеденные столы">Столы</button>
+  <button type="button" data-section-category="Столы и стулья" data-section-subcategory="Стулья для столовой">Стулья</button>
+  <button type="button" data-sale-filter>Акции</button>
+</div>
+<button class="mobile-filter-toggle" type="button" data-mobile-filter-toggle aria-expanded="false">Фильтры и сортировка</button><div class="catalog-layout"><aside class="filters reveal"><div class="filters__top"><h3>Фильтры</h3><button type="button" class="link-button" data-reset-filters>Сбросить</button></div><label class="field"><span>Категория</span><select data-filter="category"><option value="all">Все категории</option></select></label><label class="field" data-subcategory-field hidden><span>Подкатегория</span><select data-filter="subcategory"><option value="all">Все подкатегории</option></select></label><div class="field price-range-field"><span>Цена</span><div class="price-range-inputs" role="group" aria-label="Диапазон цены"><label class="price-input-pill"><span>от</span><input type="number" inputmode="numeric" min="8000" max="90000" step="1000" value="8000" data-filter="priceMin" aria-label="Цена от"></label><label class="price-input-pill"><span>до</span><input type="number" inputmode="numeric" min="8000" max="90000" step="1000" value="90000" data-filter="priceMax" aria-label="Цена до"></label></div></div><label class="field"><span>Цвет</span><select data-filter="color"><option value="all">Любой цвет</option><option value="бежевый">Бежевый</option><option value="коричневый">Коричневый</option><option value="серый">Серый</option><option value="графитовый">Графитовый</option><option value="натуральный">Натуральный</option></select></label><label class="field"><span>Размер</span><select data-filter="size"><option value="all">Любой размер</option><option value="compact">Компактный</option><option value="standard">Стандартный</option><option value="large">Большой</option></select></label><label class="field"><span>Материал</span><select data-filter="material"><option value="all">Любой материал</option><option value="ткань">Ткань</option><option value="кожа">Кожа</option><option value="экокожа">Экокожа</option><option value="массив">Массив</option><option value="лдсп">ЛДСП</option></select></label><label class="field"><span>Назначение</span><select data-filter="purpose"><option value="all">Любое</option><option value="home">Для дома</option><option value="office">Для офиса</option><option value="sleep">Для сна</option><option value="dining">Для столовой</option></select></label><label class="field"><span>Тип обивки</span><select data-filter="upholstery"><option value="all">Любой</option><option value="ткань">Ткань</option><option value="кожа">Кожа</option><option value="экокожа">Экокожа</option><option value="нет">Без обивки</option></select></label><label class="field"><span>Механизм / конструкция</span><select data-filter="mechanism"><option value="all">Любой</option><option value="еврокнижка">Еврокнижка</option><option value="дельфин">Дельфин</option><option value="стационарный">Стационарный</option><option value="раздвижной">Раздвижной</option><option value="ламели">Основание с ламелями</option><option value="средняя жесткость">Средняя жёсткость</option></select></label><label class="field"><span>Наличие</span><select data-filter="availability"><option value="all">Любой статус</option><option value="in-stock">В наличии</option><option value="preorder">Под заказ</option><option value="check">Уточнить наличие</option></select></label><label class="check-field"><input type="checkbox" data-filter="sale"><span>Только со скидкой</span></label><label class="field"><span>Сортировка</span><select data-filter="sort"><option value="popular">По популярности</option><option value="priceAsc">Сначала дешевле</option><option value="priceDesc">Сначала дороже</option><option value="discount">По размеру скидки</option></select></label><div class="filters__actions"><button type="button" class="btn btn--small filters__apply" data-apply-filters>Применить фильтры</button><p class="filters__hint">Настройте параметры — мы покажем подходящие варианты.</p></div></aside><div class="catalog__content"><div class="product-grid" data-products></div><div class="catalog-load-more" data-catalog-load-more hidden><p data-catalog-load-more-status>Показано 0 из 0 товаров</p><button class="btn btn--small" type="button" data-catalog-load-more-button>Показать ещё</button></div><div class="empty-state" data-empty hidden><h3>Подходящих товаров пока не найдено</h3><p>Измените фильтры или напишите нам — подберём похожую модель вручную.</p><a class="btn" href="#callback">Помочь с выбором</a></div></div></div></div></section>
+    <section class="advantages section-padding"><div class="container"><div class="section-head reveal"><p class="eyebrow">Почему МебельСлот</p><h2>Покупать мебель проще, когда всё понятно</h2></div><div class="advantage-grid"><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M4.75 10.25L12 4.5l7.25 5.75v8a1.5 1.5 0 0 1-1.5 1.5H6.25a1.5 1.5 0 0 1-1.5-1.5v-8Z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9.5 19.75v-5.25h5v5.25" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span><h3>Понятный ассортимент</h3><p>В каталоге — модели для гостиной, спальни, кухни и офиса, без лишнего визуального шума.</p></article><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 4.5c-4.42 0-8 3.18-8 7.1 0 3.42 2.74 6.15 6.15 6.15H11a1.75 1.75 0 1 1 0 3.5h1c4.42 0 8-3.18 8-7.1 0-5.38-3.58-9.65-8-9.65Z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="8.3" cy="11.2" r="1" fill="currentColor"/>
+        <circle cx="10.9" cy="8.5" r="1" fill="currentColor"/>
+        <circle cx="14.2" cy="8.8" r="1" fill="currentColor"/>
+      </svg>
+    </span><h3>Подбор под интерьер</h3><p>Уточняйте цвет, материал, размер и стиль перед заказом — поможем выбрать подходящий вариант.</p></article><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M4.75 7.25h10.5v8.5H4.75v-8.5Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+        <path d="M15.25 10.25h3.1l1.9 2.25v3.25h-5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="8.25" cy="17.75" r="1.5" stroke="currentColor" stroke-width="1.9"/>
+        <circle cx="17.75" cy="17.75" r="1.5" stroke="currentColor" stroke-width="1.9"/>
+      </svg>
+    </span><h3>Доставка до квартиры</h3><p>Доставку, подъём и удобное время согласуем при подтверждении заказа.</p></article><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M10 5h6.2a2 2 0 0 1 1.41.59l1.8 1.8a2 2 0 0 1 0 2.82l-7.2 7.2a2 2 0 0 1-2.82 0l-4.8-4.8a2 2 0 0 1 0-2.82L10 5Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+        <circle cx="15.5" cy="8.5" r="1" fill="currentColor"/>
+        <path d="M8.2 15.8l7.6-7.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+      </svg>
+    </span><h3>Выгодные предложения</h3><p>Следите за скидками и товарами со склада — такие позиции можно получить быстрее.</p></article><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <rect x="4.5" y="6.25" width="15" height="11.5" rx="2.2" stroke="currentColor" stroke-width="1.9"/>
+        <path d="M4.5 10h15" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+        <path d="M8 14.2h3.25" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+      </svg>
+    </span><h3>Онлайн-оплата из корзины</h3><p>Добавьте товары, заполните данные заказа и переходите к оплате.</p></article><article class="advantage-card reveal"><span class="icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M7 7.25h10A2.75 2.75 0 0 1 19.75 10v4A2.75 2.75 0 0 1 17 16.75h-4.35L9 19.5v-2.75H7A2.75 2.75 0 0 1 4.25 14v-4A2.75 2.75 0 0 1 7 7.25Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+    <path d="M9.2 11.1h5.6M9.2 13.9h3.7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+  </svg>
+</span><h3>Помощь с выбором</h3><p>Расскажем о материалах, механизмах и комплектациях, чтобы выбрать было проще.</p></article></div></div></section>
+
+    
+
+    
+    
+    
+    
+    <section class="steps section-padding" id="steps"><div class="container"><div class="section-head reveal"><p class="eyebrow">Как оплатить</p><h2>Пять понятных шагов до онлайн-покупки мебели</h2><p>Процесс строится через корзину: вы выбираете товар, указываете данные доставки и переходите к оплате.</p></div><ol class="steps-line"><li class="reveal"><span>1</span><h3>Выберите мебель</h3><p>Откройте каталог, сравните модели и добавьте подходящий товар в корзину.</p></li><li class="reveal"><span>2</span><h3>Оформите заказ</h3><p>Заполните форму в корзине: имя, телефон, способ получения и комментарий к заказу.</p></li><li class="reveal"><span>3</span><h3>Проверьте итог</h3><p>В корзине отображаются выбранные позиции, количество и сумма товаров к оплате.</p></li><li class="reveal"><span>4</span><h3>Перейдите к оплате</h3><p>После отправки формы откроется окно оплаты или страница платёжного сервиса.</p></li><li class="reveal"><span>5</span><h3>Получите мебель</h3><p>После оплаты останется принять доставку или забрать заказ самостоятельно.</p></li></ol></div></section>
+    <section class="trust section-padding" id="reviews"><div class="container trust__grid"><div class="trust__content reveal"><p class="eyebrow">Отзывы</p><h2>Покупателям важно, чтобы мебель подошла с первого раза</h2><p>Мы помогаем сузить выбор, объясняем различия моделей и заранее проговариваем доставку, размеры и комплектацию.</p><div class="rating-card"><strong>4.8 из 5</strong><span>Средняя оценка по отзывам</span><div>★★★★★</div></div></div><div class="review-grid"><article class="review-card reveal"><p>«Помогли выбрать диван под размер гостиной. Объяснили, какой механизм удобнее для сна, и заранее согласовали доставку.»</p><strong>Анна, диван-кровать</strong></article><article class="review-card reveal"><p>«Понравилось, что не давят с покупкой. Спокойно объяснили разницу материалов и помогли выбрать кровать.»</p><strong>Илья, кровать</strong></article><article class="review-card reveal"><p>«Для офиса подобрали лаконичный диван в зону ожидания. Быстро оформили сообщение и подтвердили сроки.»</p><strong>Марина, офисная мебель</strong></article></div></div><div class="container gallery-strip review-photo-placeholders" aria-label="Места под фото мебели из отзывов"><div class="review-photo-placeholder"><span>Место под фото из отзыва</span></div><div class="review-photo-placeholder"><span>Место под фото из отзыва</span></div><div class="review-photo-placeholder"><span>Место под фото из отзыва</span></div><div class="review-photo-placeholder"><span>Место под фото из отзыва</span></div></div></section>
+    <section class="delivery section-padding" id="delivery"><div class="container"><div class="section-head reveal"><p class="eyebrow">Доставка и оплата</p><h2>Доставка и онлайн-оплата на сайте</h2></div><div class="delivery__grid"><article class="delivery__card reveal"><h3>Доставка</h3><ul class="nice-list"><li>Доставка по городу и ближайшим районам.</li><li>Подъём на этаж и занос в квартиру — по договорённости.</li><li>Самовывоз возможен для части товаров со склада.</li><li>Дата, время и условия доставки подтверждаются заранее.</li></ul></article><article class="delivery__card reveal"><h3>Оплата</h3><ul class="nice-list"><li>Товары можно оплатить онлайн после оформления корзины.</li><li>После заполнения данных заказа открывается окно оплаты.</li><li>Оплата проходит через страницу платёжного сервиса.</li><li>Доставка и дополнительные услуги рассчитываются отдельно, если они не включены в корзину.</li></ul></article></div></div></section>
+
+<section class="about section-padding" id="about"><div class="container about__panel reveal"><div><p class="eyebrow">О нас</p><h2>МебельСлот — мебельный магазин для дома и офиса</h2></div><div class="about__copy"><p>МебельСлот — интернет-магазин мебели, где можно подобрать решения для гостиной, спальни, кухни, столовой и рабочего пространства. Мы ориентируемся на понятный ассортимент, спокойную консультацию и аккуратное сопровождение заказа на каждом этапе.</p><p>Перед оформлением мы помогаем уточнить размеры, материал, цвет, комплектацию и доставку. Наша задача — чтобы покупатель заранее понимал, какая модель ему подходит, когда её можно получить и какие дополнительные услуги могут потребоваться.</p></div></div></section>
+
+<section class="slotik-spotlight section-padding" id="slotik-feature" aria-labelledby="slotik-feature-title">
+  <div class="container slotik-spotlight__panel reveal">
+    <div class="slotik-spotlight__copy">
+      <p class="eyebrow">Помощник в каталоге</p>
+      <h2 id="slotik-feature-title">Слотик помогает выбрать мебель без долгих поисков</h2>
+      <p>Напишите, что нужно: диван до 70 000 ₽, кровать 160×200, мебель для маленькой комнаты или вариант для детей и животных. Слотик подскажет подходящие товары и объяснит, на что обратить внимание.</p>
+      <div class="slotik-spotlight__actions">
+        <button class="btn" type="button" data-ai-toggle aria-controls="ai-helper-panel">Открыть Слотика</button>
+        <a class="btn btn--ghost" href="#catalog">Сначала в каталог</a>
+      </div>
+    </div>
+    <div class="slotik-spotlight__card" aria-hidden="true">
+      <span>Примеры вопросов</span>
+      <div class="slotik-spotlight__examples">
+        <strong>«Нужен диван для ежедневного сна до 60 000 ₽»</strong>
+        <strong>«Посоветуй кровать 160×200 для спальни»</strong>
+        <strong>«Что подойдёт для маленькой комнаты?»</strong>
+        <strong>«Покажи недорогие стулья для кухни»</strong>
+      </div>
+      <p>Слотик уточнит детали и покажет подходящие модели из каталога.</p>
+    </div>
+  </div>
+</section>
+    <section class="contacts section-padding" id="contacts"><div class="container contacts__grid"><div class="contacts__info reveal"><p class="eyebrow">Контакты</p><h2>Контакты магазина</h2><div class="contact-line"><span>Телефон</span><a href="tel:+79990000000">+7 999 000-00-00</a></div><div class="contact-line"><span>Мессенджеры</span><p>WhatsApp, Telegram, MAX</p></div><div class="contact-line"><span>Адрес</span><p>ул. Мебельная, 10, Владивосток</p></div><div class="contact-line"><span>График</span><p>Пн–Сб 10:00–20:00, Вс 11:00–18:00</p></div><div class="map-placeholder">Адрес магазина и зона доставки</div></div><form class="request-form reveal" id="callback"><h3>Нужна консультация?</h3><p>Оставьте имя, телефон и комментарий — поможем с выбором, размерами, материалами и условиями доставки.</p><label>Имя<input type="text" name="name" placeholder="Ваше имя" autocomplete="name"></label><label>Телефон<input type="tel" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required></label><label>Комментарий к заказу<textarea name="comment" rows="4" placeholder="Например: нужен диван для ежедневного сна, комната около 16 м²"></textarea></label><button class="btn" type="submit">Отправить сообщение</button><small>Нажимая кнопку, вы соглашаетесь с <a href="#legal-consent" data-legal-open="consent">обработкой персональных данных</a> и <a href="#legal-privacy" data-legal-open="privacy">политикой конфиденциальности</a>.</small><p class="form-status" data-form-status></p></form></div></section>
+
+<section class="faq section-padding" id="faq"><div class="container faq__grid"><div class="section-head reveal"><p class="eyebrow">Вопросы</p><h2>Что стоит уточнить перед заказом</h2><p>Собрали основные вопросы, которые обычно возникают при выборе мебели онлайн.</p></div><div class="accordion"><article class="faq-item reveal"><button type="button">Можно ли оформить заказ с доставкой?<span></span></button><p>Да, доставка доступна по городу и ближайшим районам. Стоимость зависит от адреса, подъёма и габаритов товара.</p></article><article class="faq-item reveal"><button type="button">Можно ли получить помощь с выбором?<span></span></button><p>Да, мы поможем подобрать размер, материал, цвет, механизм и подходящую категорию товара.</p></article><article class="faq-item reveal"><button type="button">Как понять, есть ли товар в наличии?<span></span></button><p>Наличие указано в карточке товара. Для товаров под заказ срок доставки и комплектация уточняются отдельно.</p></article><article class="faq-item reveal"><button type="button">Можно ли подобрать мебель по размерам комнаты?<span></span></button><p>Да, укажите размеры помещения или желаемые габариты — мы предложим модели, которые лучше подойдут по масштабу.</p></article><article class="faq-item reveal"><button type="button">Как проходит оплата заказа?<span></span></button><p>После оформления корзины открывается окно оплаты. Покупатель проверяет сумму и переходит на страницу платёжного сервиса.</p></article></div></div></section>
+</main>
+  <footer class="footer"><div class="container footer__grid"><div><a class="brand brand--footer" href="#top"><img class="brand__icon-img" src="assets/images/brand/mebelslot-logo.png" alt="" width="656" height="324"><span class="brand__name">МебельСлот</span></a><p>Мебель для дома и офиса: понятный каталог, помощь с выбором, корзина и онлайн-оплата.</p></div><div><h3>Разделы</h3><a href="#catalog">Каталог</a><a href="#sales">Акции</a><a href="#delivery">Доставка и оплата</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></div><div><h3>Категории</h3><a href="#catalog" data-footer-category="Диваны">Диваны</a><a href="#catalog" data-footer-category="Кровати и матрасы">Кровати и матрасы</a><a href="#catalog" data-footer-category="Столы и стулья">Столы и стулья</a><a href="#sales">Акции</a></div><div><h3>Контакты</h3><a href="tel:+79990000000">+7 999 000-00-00</a><a href="mailto:info@mebelslot.ru">info@mebelslot.ru</a><a href="#legal-privacy" data-legal-open="privacy">Политика конфиденциальности</a><a href="#legal-consent" data-legal-open="consent">Согласие на обработку данных</a><a href="#legal-offer" data-legal-open="offer">Условия покупки</a></div></div><div class="container footer__bottom"><span>© 2026 МебельСлот. Все права защищены.</span></div></footer>
+  <div class="cart-panel" data-cart-panel aria-hidden="true"><div class="cart-panel__overlay" data-cart-close></div><aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title"><div class="cart-drawer__head"><div><p class="eyebrow">Корзина</p><h2 id="cart-title">Ваш заказ в корзине</h2></div><button class="cart-drawer__close" type="button" data-cart-close aria-label="Закрыть корзину">×</button></div><div class="cart-empty" data-cart-empty><h3>Корзина пока пустая</h3><p>Вы пока ничего не добавили. Когда выберете товар, здесь появятся позиции, количество и итоговая сумма.</p><a class="btn" href="#catalog" data-cart-close>В каталог</a></div><div class="cart-filled" data-cart-filled hidden><div class="cart-items" data-cart-items></div><div class="cart-summary"><div class="cart-summary__row"><span>Товары</span><strong data-cart-subtotal>0 ₽</strong></div><div class="cart-summary__row cart-summary__row--muted"><span>Доставка</span><span>рассчитывается отдельно</span></div><div class="cart-summary__row cart-summary__row--total"><span>К оплате за товары</span><strong data-cart-total>0 ₽</strong></div></div><form class="cart-order cart-checkout" data-cart-order><h3>Оформление и оплата</h3><p>Заполните имя и телефон. После проверки заказа откроется платёжный шаг с номером заказа и итоговой суммой.</p><label>Имя<input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required></label><label>Телефон<input type="tel" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" required></label><label>Email для чека или подтверждения <small>необязательно</small><input type="email" name="email" placeholder="mail@example.ru" autocomplete="email"></label><label>Способ получения<select name="delivery" required data-delivery-method><option value="pickup">Самовывоз из магазина</option><option value="delivery">Доставка по Владивостоку</option><option value="delivery-lift">Доставка с подъёмом</option></select></label><label data-delivery-address hidden>Адрес доставки<textarea name="address" rows="2" placeholder="Улица, дом, квартира, подъезд" data-delivery-address-field></textarea></label><label>Комментарий к заказу<textarea name="comment" rows="3" placeholder="Цвет, этаж, удобное время доставки или другие пожелания"></textarea></label><label class="cart-consent"><input type="checkbox" name="agreement" required><span>Согласен с <a href="#legal-consent" data-legal-open="consent">обработкой персональных данных</a>, <a href="#legal-offer" data-legal-open="offer">условиями покупки</a> и <a href="#legal-privacy" data-legal-open="privacy">политикой конфиденциальности</a></span></label><button class="btn cart-order__submit" type="submit">Перейти к оплате</button><p class="form-status" data-cart-status role="status" aria-live="polite"></p></form></div></aside></div>
+
+  <div class="payment-modal" data-payment-modal aria-hidden="true"><div class="payment-modal__overlay" data-payment-close></div><div class="payment-modal__card" role="dialog" aria-modal="true" aria-labelledby="payment-title"><button class="payment-modal__close" type="button" data-payment-close aria-label="Закрыть окно оплаты">×</button><p class="eyebrow">Оплата</p><h2 id="payment-title">Проверьте заказ перед оплатой</h2><p>Проверьте номер заказа, контактные данные и итоговую сумму. После подтверждения откроется страница платёжного сервиса.</p><div class="payment-modal__summary"><div class="payment-modal__row"><span>Номер заказа</span><strong data-payment-order>MS-000000</strong></div><div class="payment-modal__row"><span>Покупатель</span><strong data-payment-customer>—</strong></div><div class="payment-modal__row"><span>Получение</span><strong data-payment-delivery>—</strong></div><div class="payment-modal__row"><span>Позиций</span><strong data-payment-count>0</strong></div><div class="payment-modal__row payment-modal__row--total"><span>К оплате за товары</span><strong data-payment-total>0 ₽</strong></div></div><p class="payment-modal__note" data-payment-note>Оплата сейчас работает в демонстрационном режиме. В рабочей версии здесь будет переход на страницу платёжного сервиса.</p><p class="payment-modal__delivery-note">Доставка, подъём и сборка рассчитываются отдельно и могут быть согласованы с менеджером.</p><div class="payment-modal__actions"><button class="btn" type="button" data-payment-redirect>Перейти на страницу оплаты</button><button class="btn btn--secondary" type="button" data-payment-close>Вернуться в корзину</button></div></div></div>
+
+
+  <div class="legal-modal" data-legal-modal aria-hidden="true">
+    <div class="legal-modal__overlay" data-legal-close></div>
+    <section class="legal-modal__card" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title">
+      
+      <p class="eyebrow" data-legal-badge>Правовой документ</p>
+      <h2 id="legal-modal-title" data-legal-title>Документ</h2>
+      <div class="legal-modal__notice" data-legal-notice></div>
+      <div class="legal-modal__body" data-legal-body></div>
+    </section>
+  </div>
+  <div class="favorites-panel" data-favorites-panel aria-hidden="true"><div class="favorites-panel__overlay" data-favorites-close></div><aside class="favorites-drawer" role="dialog" aria-modal="true" aria-labelledby="favorites-title"><div class="favorites-drawer__head"><div><p class="eyebrow">Понравившееся</p><h2 id="favorites-title">Сохранённые товары</h2></div><button class="favorites-drawer__close" type="button" data-favorites-close aria-label="Закрыть понравившееся">×</button></div><div class="favorites-empty" data-favorites-empty><h3>Пока ничего не сохранено</h3><p>Нажмите на сердечко в карточке товара, чтобы вернуться к модели позже и сравнить варианты.</p><a class="btn" href="#catalog" data-favorites-close>В каталог</a></div><div class="favorites-filled" data-favorites-filled hidden><div class="favorites-items" data-favorites-items></div><button class="btn btn--secondary favorites-clear" type="button" data-favorites-clear>Очистить понравившееся</button></div></aside></div>
+  <div class="site-toast" data-site-toast role="status" aria-live="polite"></div><dialog class="product-modal" data-product-modal><div class="modal-body" data-modal-body></div></dialog>
+  <script src="data/settings.js"></script>
+  <script src="data/legal.js"></script>
+  <script src="data/categories.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/legal-modals.js"></script>
+
+  <script src="js/mobile/hero-sync.js"></script>
+
+  <script src="js/mobile/menu-overlay-guard.js"></script>
+
+  <script src="js/navigation.js"></script>
+
+  <script src="js/mobile/header-layout.js"></script>
+
+  <script src="js/mobile/nav-position.js"></script>
+<section class="ai-helper-panel" id="ai-helper-panel" data-ai-helper aria-hidden="true" role="dialog" aria-label="Слотик — консультант МебельСлот">
+  <div class="ai-helper-panel__head">
+    <div class="ai-helper-avatar" aria-hidden="true">
+      <svg viewBox="0 0 42 42" focusable="false" aria-hidden="true">
+        <path class="slotik-icon__bubble" d="M9 12.5C9 8.9 11.9 6 15.5 6h11C30.1 6 33 8.9 33 12.5v7.2c0 3.6-2.9 6.5-6.5 6.5h-6.8l-6.3 5.1c-.8.7-2.1.1-2.1-1v-4.4C9.9 25 9 22.8 9 20.2v-7.7Z"/>
+        <path class="slotik-icon__sparkle" d="M30.5 9.2l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9.9-2.1Z"/>
+        <circle class="slotik-icon__dot" cx="16" cy="16.8" r="1.45"/>
+        <circle class="slotik-icon__dot" cx="21" cy="16.8" r="1.45"/>
+        <path class="slotik-icon__smile" d="M16.4 21.1c1.2 1.1 2.8 1.6 4.6 1.6s3.4-.5 4.6-1.6"/>
+      </svg>
+    </div>
+    <div class="ai-helper-title">
+      <strong>Слотик</strong>
+      <span>Ваш проводник по МебельСлоту</span>
+    </div>
+    <button class="ai-helper-close" type="button" data-ai-close aria-label="Закрыть Слотика"></button>
+  </div>
+  <div class="ai-helper-messages" data-ai-messages aria-live="polite">
+    <div class="ai-message ai-message--bot">Здравствуйте! Я Слотик. Помогу с выбором мебели, заказом, оплатой, доставкой и вопросами по сайту. Напишите, что ищете, или выберите быстрый вопрос ниже.</div>
+    <div class="ai-helper-actions" aria-label="Быстрые действия Слотика">
+      <button type="button" data-ai-prompt="Нужна мебель для гостиной до 80 тысяч">Гостиная до 80 000 ₽</button>
+      <button type="button" data-ai-prompt="Что лучше выбрать для ежедневного сна?">Что лучше для сна?</button>
+      <button type="button" data-ai-prompt="Какие сейчас есть скидки?">Найти скидки</button>
+      <button type="button" data-ai-action="cart-summary">Проверить корзину</button>
+    </div>
+  </div>
+  <details class="ai-helper-quick" aria-label="Быстрые вопросы">
+    <summary><span>Быстрые вопросы</span><small>темы</small></summary>
+    <div class="ai-helper-quick__panel">
+      <button type="button" data-ai-action="about">О МебельСлоте</button>
+      <button type="button" data-ai-prompt="Как проходит доставка?">Доставка</button>
+      <button type="button" data-ai-prompt="Как оплатить заказ?">Оплата</button>
+      <button type="button" data-ai-prompt="Как выбрать материал дивана?">Материалы</button>
+      <button type="button" data-ai-prompt="Есть ли гарантия?">Гарантия</button>
+      <button type="button" data-ai-prompt="Как работает понравившееся?">Понравившееся</button>
+    </div>
+  </details>
+  <form class="ai-helper-form" data-ai-form>
+    <input type="text" data-ai-input autocomplete="off" placeholder="Например: нужен диван до 70 тысяч" aria-label="Вопрос Слотику">
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+<button class="ai-helper-toggle" type="button" data-ai-toggle aria-expanded="false" aria-controls="ai-helper-panel" aria-label="Открыть Слотика">
+  <span class="ai-helper-toggle__mark" aria-hidden="true">
+    <svg viewBox="0 0 42 42" focusable="false" aria-hidden="true">
+      <path class="slotik-icon__bubble" d="M9 12.5C9 8.9 11.9 6 15.5 6h11C30.1 6 33 8.9 33 12.5v7.2c0 3.6-2.9 6.5-6.5 6.5h-6.8l-6.3 5.1c-.8.7-2.1.1-2.1-1v-4.4C9.9 25 9 22.8 9 20.2v-7.7Z"/>
+      <path class="slotik-icon__sparkle" d="M30.5 9.2l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9.9-2.1Z"/>
+      <circle class="slotik-icon__dot" cx="16" cy="16.8" r="1.45"/>
+      <circle class="slotik-icon__dot" cx="21" cy="16.8" r="1.45"/>
+      <path class="slotik-icon__smile" d="M16.4 21.1c1.2 1.1 2.8 1.6 4.6 1.6s3.4-.5 4.6-1.6"/>
+    </svg>
+  </span>
+  <span class="ai-helper-toggle__text">Слотик</span>
+</button>
+
+<button class="back-to-top" type="button" data-back-to-top aria-label="Наверх">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M12 5l-7 7 1.6 1.6 4.3-4.3V20h2.2V9.3l4.3 4.3L19 12 12 5z" fill="currentColor"/>
+  </svg>
+</button>
+  <script src="js/back-to-top.js"></script>
+
+  <script src="js/favorites-drawer.js"></script>
+
+  <script src="js/slotik.js"></script>
+
+  <script src="js/mobile/modal-state.js"></script>
+
+  <script src="js/mobile/ux-states.js"></script>
+
+  <script src="js/mobile/catalog-transition.js"></script>
+</body>
+</html>

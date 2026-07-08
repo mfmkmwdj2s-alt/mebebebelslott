@@ -1,0 +1,23 @@
+{
+  "name": "МебельСлот",
+  "short_name": "МебельСлот",
+  "description": "Сайт мебели для дома и офиса во Владивостоке.",
+  "lang": "ru-RU",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffaf3",
+  "theme_color": "#5A2B14",
+  "icons": [
+    {
+      "src": "assets/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
